@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        int a,b;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero: ");
+        a = ler.nextInt();
+
+        
+        System.out.println("Digite outro numero");
+        b = ler.nextInt();
+
+        System.out.println("digite a operacao matematica( +, -, *, /) ");
+        String operacao = ler.next();
+        
+        switch (operacao) {
+            case "+":
+                int result = a + b;
+                System.out.println("o resultado da adicao e " + result);
+                break;
+            case "-":
+                int total = a - b;
+                System.out.println("o resultado da subtracao e " + total);
+                break;
+
+            case "*":
+                int total1 = a * b;
+                System.out.println("o resultado da multiplicacao e " + total1);
+                break;
+            case "/":
+                int total2 = a / b;
+                System.out.println("o resultado da divisao e " + total2);
+                break;
+        
+            default:
+            System.out.println("voce não digitou uma operacao validada ");
+                break;
+        }
+    }
+}
